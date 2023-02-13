@@ -11,7 +11,7 @@
 
 1. Должен быть предустановлен менеджер зависимостей `poetry`. Или установите `poetry` любым удобным способом. 
    Например: `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -` 
-2. Выполните клонирование репозитория: `git clone https://github.com/inkoit/sudoku-solver-task.git`
+2. Выполните клонирование репозитория: `git clone https://github.com/suband74/rishat`
 3. Затем выполните установку зависимостей проекта: `poetry install`
 4. Установить docker и docker-compose. Инструкции по установке доступны в официальной документации.
 5. Изменить название файла `env_mode` на `.env` и вписать ключи, полученные вами с сайта `https://stripe.com`
