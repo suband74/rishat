@@ -1,0 +1,18 @@
+services:
+  db:
+    container_name: db_rishat
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    env_file:
+      - ./.env
+  web:
+    container_name: web_rishat
+    build: .
+    command: bash -c "./manage.py migrate --noinput && ./manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
